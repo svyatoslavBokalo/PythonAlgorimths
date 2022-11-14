@@ -25,7 +25,7 @@ def ReadFromFile(str = "Transactions.csv"):
 
     return mas
 
-print("hellllooooo")
-mas = ReadFromFile()
-for i in mas:
-    print(i)
+# print("hellllooooo")
+# mas = ReadFromFile()
+# for i in mas:
+#     print(i)
