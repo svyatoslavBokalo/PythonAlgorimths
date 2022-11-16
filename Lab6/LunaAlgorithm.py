@@ -56,7 +56,7 @@ def checkCardIsExist(number: str):
     return False
 
 
-# def fillingNumber(number:str):
+# def fillingNumber(number:variable):
 #     sum = 0
 #     lenghtOfNumber = len(number)
 #     # print("lenghtOfNumber = ", lenghtOfNumber)

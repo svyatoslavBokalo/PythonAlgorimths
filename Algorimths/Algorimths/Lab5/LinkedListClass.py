@@ -263,80 +263,80 @@ class LinkedList:
 
 
 
-ll = LinkedList()
-ll.append(1)
-ll.append("Hi!")
-ll.append(3.14)
-ll.display()
-print(ll.read(2))
-print(ll[1])
-
-print(ll.go_to_end())
-
-ll.insert(2, "insert")
-ll.display()
-# ll.insert(5, "insert")
-
-ll.insert_node(43, "insert_node")
-ll.display()
-ll.insert_node(3, 63800)
-ll.display()
-ll1 = LinkedList()
-ll1.insert_node(0, "3.453")
-ll1.display()
-
-
-lst = [3, "rere", "32345", 432.453]
-ll.insert_values(lst)
-ll.display()
-
-ll1 = LinkedList()
-ll1.insert_values(lst)
-ll1.display()
-
-ll.insert_at_head("First")
-ll.display()
-
-ll2 = LinkedList()
-ll2.insert_values([0, 45, "efe"])
-ll2.display()
-
-print()
-print("merge list:")
-ll.merge_lists(ll2)
-ll.display()
-
-
-print()
-print("MODIFY: ")
-ll.modify(0, "I'm Svyat")
-ll.display()
-
-print()
-ll.modify(3, "I'm Svyat")
-ll.display()
-
-print()
-ll.modify(ll.length() - 1, "the last")
-ll.display()
-
-print()
-print("DELETE: ")
-ll.delete(2)
-ll.display()
-
-print()
-ll.delete(0)
-ll.display()
-
-print()
-ll.delete(ll.length()-1)
-ll.display()
-
-print()
-print("REVERSE: ")
-ll.reverse()
-ll.display()
+# ll = LinkedList()
+# ll.append(1)
+# ll.append("Hi!")
+# ll.append(3.14)
+# ll.display()
+# print(ll.read(2))
+# print(ll[1])
+#
+# print(ll.go_to_end())
+#
+# ll.insert(2, "insert")
+# ll.display()
+# # ll.insert(5, "insert")
+#
+# ll.insert_node(43, "insert_node")
+# ll.display()
+# ll.insert_node(3, 63800)
+# ll.display()
+# ll1 = LinkedList()
+# ll1.insert_node(0, "3.453")
+# ll1.display()
+#
+#
+# lst = [3, "rere", "32345", 432.453]
+# ll.insert_values(lst)
+# ll.display()
+#
+# ll1 = LinkedList()
+# ll1.insert_values(lst)
+# ll1.display()
+#
+# ll.insert_at_head("First")
+# ll.display()
+#
+# ll2 = LinkedList()
+# ll2.insert_values([0, 45, "efe"])
+# ll2.display()
+#
+# print()
+# print("merge list:")
+# ll.merge_lists(ll2)
+# ll.display()
+#
+#
+# print()
+# print("MODIFY: ")
+# ll.modify(0, "I'm Svyat")
+# ll.display()
+#
+# print()
+# ll.modify(3, "I'm Svyat")
+# ll.display()
+#
+# print()
+# ll.modify(ll.length() - 1, "the last")
+# ll.display()
+#
+# print()
+# print("DELETE: ")
+# ll.delete(2)
+# ll.display()
+#
+# print()
+# ll.delete(0)
+# ll.display()
+#
+# print()
+# ll.delete(ll.length()-1)
+# ll.display()
+#
+# print()
+# print("REVERSE: ")
+# ll.reverse()
+# ll.display()
 # lst = [3, "rere", "32345", 432.453]
 # ll1 = LinkedList()
 # ll1.insert_values(lst)
