@@ -35,16 +35,16 @@ class Transaction:
             encoded = hashStr.encode()
             self.__hash_value = hashlib.sha256(encoded).hexdigest()
             return
-        elif(variable is Transaction):
-            variable = Transaction(variable)
-            self.__number = variable.get_number()
-            self.__timeStr = variable.get_timeStr()
-            self.__dateStr = variable.get_dataStr()
-            self.__from = variable.get_from()
-            self.__to = variable.get_to()
-            self.__amount = variable.get_amount()
-            self.__hash_value = variable.get_hash()
-            return
+        # elif(variable is Transaction):
+        #     variable = Transaction(variable)
+        #     self.__number = variable.get_number()
+        #     self.__timeStr = variable.get_timeStr()
+        #     self.__dateStr = variable.get_dataStr()
+        #     self.__from = variable.get_from()
+        #     self.__to = variable.get_to()
+        #     self.__amount = variable.get_amount()
+        #     self.__hash_value = variable.get_hash()
+        #     return
 
     # def __get_Hash_Value(self):
     #     hashStr = variable(self.__number) + variable(self.__timeStr) + variable(self.__dateStr) + variable(self.__from)+variable(self.__to)+variable(self.__amount)

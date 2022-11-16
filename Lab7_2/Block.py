@@ -1,5 +1,5 @@
-from Lab7.Transaction import *
-from Algorimths.Algorimths.Lab5.LinkedListClass import *
+from Lab7_2.Transaction import *
+from Lab5.LinkedListClass import *
 import hashlib
 class Block:
     def __init__(self, block_number, previous_hash, trans1, trans2, trans3, hash):
@@ -57,7 +57,7 @@ class Block:
         return str(self.__hash)
 
     def __str__(self):
-        return f'*****Block{str(self.__block_number)}***** \n ' \
+        return f'*****Block{str(self.__block_number)}***** \n' \
                f'PrevHash: {str(self.__previous_hash)} \n' \
                f'Tr1: {str(self.__transaction1)}\n' \
                f'Tr2: {str(self.__transaction2)}\n' \

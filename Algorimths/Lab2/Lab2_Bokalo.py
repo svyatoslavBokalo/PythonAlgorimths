@@ -1,5 +1,5 @@
 import math
-from lab1JustPolishNotation import *
+from Algorimths.Lab2.lab1JustPolishNotation import *
 
 
 #this method for operations on numbers

@@ -1,4 +1,4 @@
-from Lab7.Block import *
+from Lab7_2.Block import *
 from Lab7.ActionOnFile import *
 
 
@@ -27,7 +27,7 @@ def create_blocks():
 
     return lst
 
-print(__create_block())
+# print(__create_block())
 # class Blockchain:
 #     def __int__(self):
 #         self.__block = self.__create_block()

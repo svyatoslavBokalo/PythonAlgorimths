@@ -1,4 +1,4 @@
-from Lab7.Transaction import *
+from Lab7_2.Transaction import *
 def ReadFromFile(fileName ="Transactions.csv"):
     mas = []
     file = open(fileName, "r")
