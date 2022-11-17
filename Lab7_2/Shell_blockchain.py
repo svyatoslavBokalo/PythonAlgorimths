@@ -1,4 +1,4 @@
-from Lab5.LinkedListClass import *
+from Algorimths.Lab5.LinkedListClass import *
 from Lab7_2.Transaction import *
 from Lab7_2.Block import *
 import hashlib
@@ -23,21 +23,54 @@ class Shell_blockchain:
 
         k = 1
         for i in range(3, len(lines), 3):
-            prev_hash = hash
-            transaction1 = Transaction(lines[i])
-            transaction2 = Transaction(lines[i+1])
-            transaction3 = Transaction(lines[i+2])
-            hashStr = repr(0) + repr(transaction1.get_hash()) + \
-                      repr(transaction2.get_hash()) + repr(transaction3.get_hash())
-            encoded = hashStr.encode()
-            hash = hashlib.sha256(encoded).hexdigest()
-            block = Block(k, prev_hash, transaction1, transaction2,
-                          transaction3, hash)
-            self.__linkedList.append(block)
+            if(len(lines) // 3 == k and len(lines) % 3 == 0):
+                # print("just return !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+                return
+            elif(len(lines) // 3 == k and len(lines)%3 == 1):
+                prev_hash = hash
+                transaction1 = Transaction(lines[i])
+                transaction2 = ""
+                transaction3 = ""
+                hashStr = repr(0) + repr(transaction1.get_hash()) + \
+                          "" + ""
+                encoded = hashStr.encode()
+                hash = hashlib.sha256(encoded).hexdigest()
+                block = Block(k, prev_hash, transaction1, transaction2,
+                              transaction3, hash)
+                # print("block = ", block)
+                self.__linkedList.append(block)
+                return
+            elif(len(lines) // 3 == k and len(lines)%3 == 2):
+                prev_hash = hash
+                transaction1 = Transaction(lines[i])
+                transaction2 = Transaction(lines[i+1])
+                transaction3 = ""
+                hashStr = repr(0) + repr(transaction1.get_hash()) + \
+                          repr(transaction2.get_hash()) + ""
+                encoded = hashStr.encode()
+                hash = hashlib.sha256(encoded).hexdigest()
+                block = Block(k, prev_hash, transaction1, transaction2,
+                              transaction3, hash)
+                # print("block = ", block)
+                self.__linkedList.append(block)
+                return
+            else:
+                prev_hash = hash
+                transaction1 = Transaction(lines[i])
+                transaction2 = Transaction(lines[i+1])
+                transaction3 = Transaction(lines[i+2])
+                hashStr = repr(0) + repr(transaction1.get_hash()) + \
+                          repr(transaction2.get_hash()) + repr(transaction3.get_hash())
+                encoded = hashStr.encode()
+                hash = hashlib.sha256(encoded).hexdigest()
+                block = Block(k, prev_hash, transaction1, transaction2,
+                              transaction3, hash)
+                self.__linkedList.append(block)
             k += 1
         file.close()
 
     def __str__(self):
+        # self.__linkedList.display()
         return self.__linkedList.display1()
 
 
