@@ -1,5 +1,5 @@
 from Lab7_2.Transaction import *
-from Lab5.LinkedListClass import *
+from Algorimths.Lab5.LinkedListClass import *
 import hashlib
 class Block:
     def __init__(self, block_number, previous_hash, trans1, trans2, trans3, hash):

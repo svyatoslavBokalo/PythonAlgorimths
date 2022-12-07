@@ -66,7 +66,7 @@ class LinkedList:
         current = self.__head
         while current.next is not None:
             current = current.next
-            s+= current.data + " "
+            s+= str(current.data) + "\n\n"
         return s
 
     # Returns the length of the linked list.
